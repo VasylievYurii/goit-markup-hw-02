@@ -11,12 +11,13 @@
     --light-mode: #F4F4FD;
     --modal-overlay: #2E2F42;
     --hero-background: #2E2F42;
+    --default-color: #ffffff;
 }
 
 body {
     color: var(--body-text);
     font-family: 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
-    background-color: #FFFFFF;
+    background-color: var(--default-color);
 }
 
 .header-logo {
@@ -45,7 +46,8 @@ body {
 .site-nav .link:focus,
 .site-nav .link:hover,
 .auth-nav .link:focus,
-.auth-nav .link:hover {
+.auth-nav .link:hover,
+.nav.current {
     color: var(--pressed-state);
 }
 
@@ -78,7 +80,7 @@ body {
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--default-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -87,8 +89,9 @@ body {
 }
 
 .hero-button {
-    color: #FFFFFF;
+    color: var(--default-color);
     background-color: var(--primary-brand);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -108,6 +111,19 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .benefits-paragraph {
@@ -194,6 +210,7 @@ body {
 .filter-btn {
     color: var(--primary-brand);
     background-color: var(--light-mode);
+    font-family: inherit;
     border-width: 0;
     font-weight: 500;
     font-size: 16px;
@@ -204,7 +221,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-    color: #FFFFFF;
+    color: var(--default-color);
     background-color: var(--pressed-state);
 }
 
