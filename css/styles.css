@@ -1,0 +1,234 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --success-color-enough: rgba(49, 208, 170, 0.75);
+    --success-color-half: rgba(49, 208, 170, 0.5);
+    --success-color-transparent: rgba(49, 208, 170, 0.1);
+    --body-text: #434455;
+    --accent-color: #E7E9FC;
+    --light-mode: #F4F4FD;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
+}
+
+body {
+    color: var(--body-text);
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.header-logo {
+    color: var(--dark-color);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+
+.web-logo {
+    color: var(--primary-brand);
+}
+
+.nav {
+    color: var(--dark-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:focus,
+.site-nav .link:hover,
+.auth-nav .link:focus,
+.auth-nav .link:hover {
+    color: var(--pressed-state);
+}
+
+.auth-nav {
+    color: var(--body-text);
+    font-style: normal;
+    /* font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav .link {
+    font-family: inherit;
+    color: inherit;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/*HERO*/
+
+.hero {
+    background-color: var(--hero-background);
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.hero-button {
+    color: #FFFFFF;
+    background-color: var(--primary-brand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+{
+background-color: var(--pressed-state);
+}
+
+/*Benefits section*/
+
+.benefits-item {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.benefits-paragraph {
+    /*    color: var(--body-text);*/
+    /*  font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.production-title {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/*Team section*/
+
+.team {
+    background-color: var(--light-mode);
+}
+
+.team-title {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.team-member {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.team-member-description {
+    /*   color: var(--body-text);*/
+    /*  font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer-logo {
+    color: var(--dark-color);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.studio {
+    color: var(--light-mode);
+}
+
+.footer-paragraph {
+    color: var(--accent-color);
+    /*  font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*Portfolio main page*/
+
+.filter,
+.portfolio-list {
+    list-style: none;
+}
+
+.filter-btn {
+    color: var(--primary-brand);
+    background-color: var(--light-mode);
+    border-width: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #FFFFFF;
+    background-color: var(--pressed-state);
+}
+
+.portfolio-link {
+    color: var(--body-text);
+    text-decoration: none;
+}
+
+.portfolio-title {
+    color: var(--modal-overlay);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-text {
+    /* font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
