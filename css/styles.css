@@ -96,9 +96,8 @@ body {
 }
 
 .hero-button:hover,
-.hero-button:focus,
-{
-background-color: var(--pressed-state);
+.hero-button:focus {
+    background-color: var(--pressed-state);
 }
 
 /*Benefits section*/
